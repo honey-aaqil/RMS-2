@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import VerifyEmail from './pages/VerifyEmail';
 import Home from './pages/Home';
+import { PWABadge } from './components/PWABadge';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           } />
         </Routes>
       </BrowserRouter>
+      <PWABadge />
     </AuthProvider>
   );
 }
